@@ -78,7 +78,6 @@
             <!-- #END# Left Sidebar -->
         </section>
         <section class="content">
-           
             <!-- Basic Example | Vertical Layout -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -87,212 +86,214 @@
                             <h2>CERTAINTY FACTOR</h2>
                         </div>
                         <div class="body">
-                            <div id="wizard_vertical">
-                                <h2>Question 1</h2>
-                                <section>
-                                    <div class="form-group form-float">
-                                        <label class="form-label">APAKAH ANDA INGIN MOTOR KOPLING ?</label>
-                                        <br><br>
-                                        <div class="row clearfix">
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q1" id="radio_1" class="with-gap radio-col-red" value="1"/>
-                                                <label for="radio_1">YA</label>
-                                                <!-- <input name="group1" type="radio" id="radio_1" checked /> -->
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q1" id="radio_2" class="with-gap radio-col-pink" value="0.6"/>
-                                                <label for="radio_2">MUNGKIN IYA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q1" id="radio_3" class="with-gap radio-col-pink" value="0.05"/>
-                                                <label for="radio_3">TIDAK TAHU</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q1" id="radio_4" class="with-gap radio-col-pink" value="-0.6"/>
-                                                <label for="radio_4">MUNGKIN TIDAK</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q1" id="radio_5" class="with-gap radio-col-pink" value="-1"/>
-                                                <label for="radio_5">TIDAK</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <h2>Question 2</h2>
-                                <section>
-                                    <div class="form-group form-float">
-                                        <label class="form-label">APAKAH ANDA INGIN MOTOR BODY BESAR ?</label>
-                                        <br><br>
-                                        <div class="row clearfix">
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q2" id="radio_6" class="with-gap radio-col-red" value="1"/>
-                                                <label for="radio_6">YA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q2" id="radio_7" class="with-gap radio-col-red" value="0.6"/>
-                                                <label for="radio_7">MUNGKIN IYA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q2" id="radio_8" class="with-gap radio-col-red" value="0.05"/>
-                                                <label for="radio_8">TIDAK TAHU</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q2" id="radio_9" class="with-gap radio-col-red" value="-0.6"/>
-                                                <label for="radio_9">MUNGKIN TIDAK</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q2" id="radio_10" class="with-gap radio-col-red" value="-1"/>
-                                                <label for="radio_10">TIDAK</label>
+                            <?php echo form_open_multipart('Welcome/perhitungan', array('enctype' => 'multipart/form-data','class' => 'form_advanced_validation', 'autocomplete' => 'off')); ?>
+                                <div id="wizard_vertical">
+                                    <h2>Question 1</h2>
+                                    <section>
+                                        <div class="form-group form-float">
+                                            <label class="form-label">APAKAH ANDA INGIN MOTOR KOPLING ?</label>
+                                            <br><br>
+                                            <div class="row clearfix">
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q1" id="radio_1" class="with-gap radio-col-red" value="1"/>
+                                                    <label for="radio_1">YA</label>
+                                                    <!-- <input name="group1" type="radio" id="radio_1" checked /> -->
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q1" id="radio_2" class="with-gap radio-col-pink" value="0.6"/>
+                                                    <label for="radio_2">MUNGKIN IYA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q1" id="radio_3" class="with-gap radio-col-pink" value="0.05"/>
+                                                    <label for="radio_3">TIDAK TAHU</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q1" id="radio_4" class="with-gap radio-col-pink" value="-0.6"/>
+                                                    <label for="radio_4">MUNGKIN TIDAK</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q1" id="radio_5" class="with-gap radio-col-pink" value="-1"/>
+                                                    <label for="radio_5">TIDAK</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </section>
-                                <h2>Question 3</h2>
-                                <section>
-                                    <div class="form-group form-float">
-                                        <label class="form-label">APAKAH ANDA INGIN MOTOR BODY KECIL  ?</label>
-                                        <br><br>
-                                        <div class="row clearfix">
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q3" id="radio_11" class="with-gap radio-col-red" value="1"/>
-                                                <label for="radio_11">YA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q3" id="radio_12" class="with-gap radio-col-red" value="0.6"/>
-                                                <label for="radio_12">MUNGKIN IYA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q3" id="radio_13" class="with-gap radio-col-red" value="0.05"/>
-                                                <label for="radio_13">TIDAK TAHU</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q3" id="radio_14" class="with-gap radio-col-red" value="-0.6"/>
-                                                <label for="radio_14">MUNGKIN TIDAK</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q3" id="radio_15" class="with-gap radio-col-red" value="-1"/>
-                                                <label for="radio_15">TIDAK</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <h2>Question 4</h2>
-                                <section>
-                                    <div class="form-group form-float">
-                                        <label class="form-label">APAKAH ANDA INGIN PERAWATAN MURAH ?</label>
-                                        <br><br>
-                                        <div class="row clearfix">
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q4" id="radio_16" class="with-gap radio-col-red" value="1"/>
-                                                <label for="radio_16">YA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q4" id="radio_17" class="with-gap radio-col-red" value="0.6"/>
-                                                <label for="radio_17">MUNGKIN IYA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q4" id="radio_18" class="with-gap radio-col-red" value="0.05"/>
-                                                <label for="radio_18">TIDAK TAHU</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q4" id="radio_19" class="with-gap radio-col-red" value="-0.6"/>
-                                                <label for="radio_19">MUNGKIN TIDAK</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q4" id="radio_20" class="with-gap radio-col-red" value="-1"/>
-                                                <label for="radio_20">TIDAK</label>
+                                    </section>
+                                    <h2>Question 2</h2>
+                                    <section>
+                                        <div class="form-group form-float">
+                                            <label class="form-label">APAKAH ANDA INGIN MOTOR BODY BESAR ?</label>
+                                            <br><br>
+                                            <div class="row clearfix">
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q2" id="radio_6" class="with-gap radio-col-red" value="1"/>
+                                                    <label for="radio_6">YA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q2" id="radio_7" class="with-gap radio-col-red" value="0.6"/>
+                                                    <label for="radio_7">MUNGKIN IYA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q2" id="radio_8" class="with-gap radio-col-red" value="0.05"/>
+                                                    <label for="radio_8">TIDAK TAHU</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q2" id="radio_9" class="with-gap radio-col-red" value="-0.6"/>
+                                                    <label for="radio_9">MUNGKIN TIDAK</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q2" id="radio_10" class="with-gap radio-col-red" value="-1"/>
+                                                    <label for="radio_10">TIDAK</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </section>
-                                <h2>Question 5</h2>
-                                <section>
-                                    <div class="form-group form-float">
-                                        <label class="form-label">APAKAH ANDA INGIN PERAWATAN MAHAL ?</label>
-                                        <br><br>
-                                        <div class="row clearfix">
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q5" id="radio_21" class="with-gap radio-col-red" value="1"/>
-                                                <label for="radio_21">YA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q5" id="radio_22" class="with-gap radio-col-red" value="0.6"/>
-                                                <label for="radio_22">MUNGKIN IYA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q5" id="radio_23" class="with-gap radio-col-red" value="0.05"/>
-                                                <label for="radio_23">TIDAK TAHU</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q5" id="radio_24" class="with-gap radio-col-red" value="-0.6"/>
-                                                <label for="radio_24">MUNGKIN TIDAK</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input  type="radio" name="q5" id="radio_25" class="with-gap radio-col-red" value="-1"/>
-                                                <label for="radio_25">TIDAK</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <h2>Question 6</h2>
-                                <section>
-                                    <div class="form-group form-float">
-                                        <label class="form-label">APAKAH ANDA INGIN MOTOR DIATAS 150 CC ?</label>
-                                        <br><br>
-                                        <div class="row clearfix">
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q6" id="radio_26" class="with-gap radio-col-red" value="1"/>
-                                                <label for="radio_26">YA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q6" id="radio_27" class="with-gap radio-col-red" value="0.6"/>
-                                                <label for="radio_27">MUNGKIN IYA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q6" id="radio_28" class="with-gap radio-col-red" value="0.05"/>
-                                                <label for="radio_28">TIDAK TAHU</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q6" id="radio_29" class="with-gap radio-col-red" value="-0.6"/>
-                                                <label for="radio_29">MUNGKIN TIDAK</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q6" id="radio_30" class="with-gap radio-col-red" value="-1"/>
-                                                <label for="radio_30">TIDAK</label>
+                                    </section>
+                                    <h2>Question 3</h2>
+                                    <section>
+                                        <div class="form-group form-float">
+                                            <label class="form-label">APAKAH ANDA INGIN MOTOR BODY KECIL  ?</label>
+                                            <br><br>
+                                            <div class="row clearfix">
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q3" id="radio_11" class="with-gap radio-col-red" value="1"/>
+                                                    <label for="radio_11">YA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q3" id="radio_12" class="with-gap radio-col-red" value="0.6"/>
+                                                    <label for="radio_12">MUNGKIN IYA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q3" id="radio_13" class="with-gap radio-col-red" value="0.05"/>
+                                                    <label for="radio_13">TIDAK TAHU</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q3" id="radio_14" class="with-gap radio-col-red" value="-0.6"/>
+                                                    <label for="radio_14">MUNGKIN TIDAK</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q3" id="radio_15" class="with-gap radio-col-red" value="-1"/>
+                                                    <label for="radio_15">TIDAK</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </section>
-                                <h2>Question 7</h2>
-                                <section>
-                                    <div class="form-group form-float">
-                                        <label class="form-label">APAKAH ANDA INGIN MOTOR DIBAWAH 150 CC ?</label>
-                                        <br><br>
-                                        <div class="row clearfix">
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q7" id="radio_31" class="with-gap radio-col-red" value="1"/>
-                                                <label for="radio_31">YA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q7" id="radio_32" class="with-gap radio-col-red" value="0.6"/>
-                                                <label for="radio_32">MUNGKIN IYA</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q7" id="radio_33" class="with-gap radio-col-red" value="0.05"/>
-                                                <label for="radio_33">TIDAK TAHU</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q7" id="radio_34" class="with-gap radio-col-red" value="-0.6"/>
-                                                <label for="radio_34">MUNGKIN TIDAK</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <input type="radio" name="q7" id="radio_35" class="with-gap radio-col-red" value="-1"/>
-                                                <label for="radio_35">TIDAK</label>
+                                    </section>
+                                    <h2>Question 4</h2>
+                                    <section>
+                                        <div class="form-group form-float">
+                                            <label class="form-label">APAKAH ANDA INGIN PERAWATAN MURAH ?</label>
+                                            <br><br>
+                                            <div class="row clearfix">
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q4" id="radio_16" class="with-gap radio-col-red" value="1"/>
+                                                    <label for="radio_16">YA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q4" id="radio_17" class="with-gap radio-col-red" value="0.6"/>
+                                                    <label for="radio_17">MUNGKIN IYA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q4" id="radio_18" class="with-gap radio-col-red" value="0.05"/>
+                                                    <label for="radio_18">TIDAK TAHU</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q4" id="radio_19" class="with-gap radio-col-red" value="-0.6"/>
+                                                    <label for="radio_19">MUNGKIN TIDAK</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q4" id="radio_20" class="with-gap radio-col-red" value="-1"/>
+                                                    <label for="radio_20">TIDAK</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </section>
-                            </div>
+                                    </section>
+                                    <h2>Question 5</h2>
+                                    <section>
+                                        <div class="form-group form-float">
+                                            <label class="form-label">APAKAH ANDA INGIN PERAWATAN MAHAL ?</label>
+                                            <br><br>
+                                            <div class="row clearfix">
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q5" id="radio_21" class="with-gap radio-col-red" value="1"/>
+                                                    <label for="radio_21">YA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q5" id="radio_22" class="with-gap radio-col-red" value="0.6"/>
+                                                    <label for="radio_22">MUNGKIN IYA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q5" id="radio_23" class="with-gap radio-col-red" value="0.05"/>
+                                                    <label for="radio_23">TIDAK TAHU</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q5" id="radio_24" class="with-gap radio-col-red" value="-0.6"/>
+                                                    <label for="radio_24">MUNGKIN TIDAK</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input  type="radio" name="q5" id="radio_25" class="with-gap radio-col-red" value="-1"/>
+                                                    <label for="radio_25">TIDAK</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <h2>Question 6</h2>
+                                    <section>
+                                        <div class="form-group form-float">
+                                            <label class="form-label">APAKAH ANDA INGIN MOTOR DIATAS 150 CC ?</label>
+                                            <br><br>
+                                            <div class="row clearfix">
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q6" id="radio_26" class="with-gap radio-col-red" value="1"/>
+                                                    <label for="radio_26">YA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q6" id="radio_27" class="with-gap radio-col-red" value="0.6"/>
+                                                    <label for="radio_27">MUNGKIN IYA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q6" id="radio_28" class="with-gap radio-col-red" value="0.05"/>
+                                                    <label for="radio_28">TIDAK TAHU</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q6" id="radio_29" class="with-gap radio-col-red" value="-0.6"/>
+                                                    <label for="radio_29">MUNGKIN TIDAK</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q6" id="radio_30" class="with-gap radio-col-red" value="-1"/>
+                                                    <label for="radio_30">TIDAK</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <h2>Question 7</h2>
+                                    <section>
+                                        <div class="form-group form-float">
+                                            <label class="form-label">APAKAH ANDA INGIN MOTOR DIBAWAH 150 CC ?</label>
+                                            <br><br>
+                                            <div class="row clearfix">
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q7" id="radio_31" class="with-gap radio-col-red" value="1"/>
+                                                    <label for="radio_31">YA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q7" id="radio_32" class="with-gap radio-col-red" value="0.6"/>
+                                                    <label for="radio_32">MUNGKIN IYA</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q7" id="radio_33" class="with-gap radio-col-red" value="0.05"/>
+                                                    <label for="radio_33">TIDAK TAHU</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q7" id="radio_34" class="with-gap radio-col-red" value="-0.6"/>
+                                                    <label for="radio_34">MUNGKIN TIDAK</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="q7" id="radio_35" class="with-gap radio-col-red" value="-1"/>
+                                                    <label for="radio_35">TIDAK</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            <?php echo form_close(); ?>   
                         </div>
                     </div>
                 </div>
