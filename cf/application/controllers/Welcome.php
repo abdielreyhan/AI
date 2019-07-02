@@ -13,6 +13,17 @@ class Welcome extends CI_Controller
 		$sport = $this->sport();
 		$matic = $this->matic();
 		$bebek = $this->bebek();
+		if($sport>=0.4 && $sport<=1)
+		{
+			echo "SPORT => ".$sport."DIREKOMENDASIKAN"."<br>";
+			echo "MATIC => ".$matic."DIREKOMENDASIKAN"."<br>";
+			echo "BEBEK => ".$bebek."DIREKOMENDASIKAN";
+		}
+		else
+		{
+			echo "Hellow";
+		}
+		
 	}
 
 	private function sport()
@@ -22,7 +33,7 @@ class Welcome extends CI_Controller
 		$q5= $this->input->post('q5');
 		$q6= $this->input->post('q6');
 		$min = min($q1, $q2, $q5, $q6);
-		return 0.8*$min;
+		$hasil = 0.8*$min;
 	}
 
 	private function matic()
@@ -34,7 +45,8 @@ class Welcome extends CI_Controller
 		$q6= $this->input->post('q6');
 		$q7= $this->input->post('q7');
 		$min = min($q2, $q3, $q4, $q5, $q6, $q7);
-		return 0.8*$min;
+		$hasil = 0.9*$min;
+		return $hasil;
 	}
 
 	private function bebek()
@@ -45,6 +57,7 @@ class Welcome extends CI_Controller
 		$q4= $this->input->post('q4');
 		$q7= $this->input->post('q7');
 		$min = min($q1, $q2, $q3, $q4, $q7);
-		return 0.8*$min;
+		$hasil = 0.6*$min;
+		return $hasil;
 	}
 }

@@ -1937,10 +1937,11 @@ var defaults = $.fn.steps.defaults = {
      * @for defaults
      **/
     onFinished: function (event, currentIndex) { 
-        var form = $(this);
-        // // Submit form input
-        form.submit();
-        //alert("Submitted!");
+        // var form = $(this);
+        // // // Submit form input
+        // form.submit();
+        // //alert("Submitted!");
+        $("#form").submit();
     },
 
     /**

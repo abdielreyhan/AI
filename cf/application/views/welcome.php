@@ -86,7 +86,7 @@
                             <h2>CERTAINTY FACTOR</h2>
                         </div>
                         <div class="body">
-                            <?php echo form_open_multipart('Welcome/perhitungan', array('enctype' => 'multipart/form-data','class' => 'form_advanced_validation', 'autocomplete' => 'off')); ?>
+                            <?php echo form_open_multipart('index.php/welcome/perhitungan', array('enctype' => 'multipart/form-data','class' => 'form_advanced_validation', 'autocomplete' => 'off' ,'id'=>'form')); ?>
                                 <div id="wizard_vertical">
                                     <h2>Question 1</h2>
                                     <section>
