@@ -75,7 +75,7 @@
                 </div>
                 <!-- #Footer -->
             </aside>
-            <!-- #END# Left Sidebar -->   
+            <!-- #END# Left Sidebar -->
         </section>
         <section class="content">
             <div class="container-fluid">
@@ -196,6 +196,10 @@
                         </div>
                         <div class="body">
                             <div id="wizard_vertical">
+                            <input name="group5" type="radio" id="radio_30" class="with-gap radio-col-red" checked />
+                                <label for="radio_30">RED</label>
+                                <input name="group5" type="radio" id="radio_31" class="with-gap radio-col-pink" />
+                                <label for="radio_31">PINK</label>
                                 <h2>Question 1</h2>
                                 <section>
                                     <div class="form-group form-float">
@@ -203,25 +207,25 @@
                                         <br><br>
                                         <div class="row clearfix">
                                             <div class="col-md-12">
-                                                <input type="radio" name="q1"  class="with-gap radio-col-red" value="1"/>
-                                                <label>YA</label>
+                                                <input type="radio" name="q1" id="radio_1" class="with-gap radio-col-red" value="1"/>
+                                                <label for="radio_1">YA</label>
                                                 <!-- <input name="group1" type="radio" id="radio_1" checked /> -->
                                             </div>
                                             <div class="col-md-12">
-                                                <input type="radio" name="q1"  class="with-gap radio-col-red" value="0.6"/>
-                                                <label>MUNGKIN IYA</label>
+                                                <input type="radio" name="q1" id="radio_2" class="with-gap radio-col-red" value="0.6"/>
+                                                <label for="radio_2">MUNGKIN IYA</label>
                                             </div>
                                             <div class="col-md-12">
-                                                <input type="radio" name="q1"  class="with-gap radio-col-red" value="0.05"/>
-                                                <label>TIDAK TAHU</label>
+                                                <input type="radio" name="q1" id="radio_3" class="with-gap radio-col-red" value="0.05"/>
+                                                <label for="radio_3">TIDAK TAHU</label>
                                             </div>
                                             <div class="col-md-12">
-                                                <input type="radio" name="q1"  class="with-gap radio-col-red" value="-0.6"/>
-                                                <label>MUNGKIN TIDAK</label>
+                                                <input type="radio" name="q1" id="radio_4" class="with-gap radio-col-red" value="-0.6"/>
+                                                <label for="radio_4">MUNGKIN TIDAK</label>
                                             </div>
                                             <div class="col-md-12">
-                                                <input type="radio" name="q1"  class="with-gap radio-col-red" value="-1"/>
-                                                <label>TIDAK</label>
+                                                <input type="radio" name="q1" id="radio_5" class="with-gap radio-col-red" value="-1"/>
+                                                <label for="radio_5">TIDAK</label>
                                             </div>
                                         </div>
                                     </div>
@@ -416,7 +420,7 @@
         <!-- Slimscroll Plugin Js -->
         <script src="<?php echo base_url('asset/home/'); ?>plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
         <!-- Waves Effect Plugin Js -->
-        <script src="<?php echo base_url('asset/home/'); ?>plugins/node-waves/waves.js"></script> 	  
+        <script src="<?php echo base_url('asset/home/'); ?>plugins/node-waves/waves.js"></script>
         <!-- Select Plugin Js -->
         <script src="<?php echo base_url('asset/home/'); ?>plugins/bootstrap-select/js/bootstrap-select.js"></script>
         <!-- Jquery Validation Plugin Css -->
