@@ -58,10 +58,16 @@
                 <div class="menu">
                     <ul class="list">
                         <li class="header">MENU UTAMA</li>
-                        <li class="active">
+                        <li>
                             <a href="<?php echo base_url('/'); ?>">
                             <i class="material-icons">home</i>
-                            <span>Home</span>
+                            <span>Certainty Factory</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url('index.php/fuzzy'); ?>">
+                            <i class="material-icons">face</i>
+                            <span>Fuzzy Logic</span>
                             </a>
                         </li>
                     </ul>
@@ -293,7 +299,7 @@
                                         </div>
                                     </section>
                                 </div>
-                            <?php echo form_close(); ?>   
+                            <?php echo form_close(); ?>
                         </div>
                     </div>
                 </div>
