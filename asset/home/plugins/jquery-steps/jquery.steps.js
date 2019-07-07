@@ -1941,7 +1941,18 @@ var defaults = $.fn.steps.defaults = {
         // // // Submit form input
         // form.submit();
         // //alert("Submitted!");
-        $("#form").submit();
+
+        $.post('Welcome/perhitungan', $('#form').serialize(), function( data ) {
+            var obj=JSON.parse(data);
+            // alert( "Data Loaded: " + obj.SPORT ); // Display information from link_to your_php_file.php
+
+            $('[name="sport"]').val(obj.SPORT);
+            $('[name="bebek"]').val(obj.BEBEK);
+            $('[name="matic"]').val(obj.MATIC);
+            $('[name="result"]').val(obj.RESULT);
+            $('#defaultModal').modal('show');
+            $('.modal-title').text('RESULT CF');
+        });
     },
 
     /**

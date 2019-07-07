@@ -59,14 +59,20 @@
                     <ul class="list">
                         <li class="header">MENU UTAMA</li>
                         <li>
-                            <a href="<?php echo base_url('/'); ?>">
+                            <a href="<?php echo base_url('Home'); ?>">
                             <i class="material-icons">home</i>
+                            <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url('Welcome'); ?>">
+                            <i class="material-icons">compare_arrows</i>
                             <span>Certainty Factory</span>
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url('index.php/fuzzy'); ?>">
-                            <i class="material-icons">face</i>
+                            <a href="<?php echo base_url('Fuzzy'); ?>">
+                            <i class="material-icons">explore</i>
                             <span>Fuzzy Logic</span>
                             </a>
                         </li>
@@ -92,7 +98,8 @@
                             <h2>CERTAINTY FACTOR</h2>
                         </div>
                         <div class="body">
-                            <?php echo form_open_multipart('index.php/welcome/perhitungan', array('enctype' => 'multipart/form-data','class' => 'form_advanced_validation', 'autocomplete' => 'off' ,'id'=>'form')); ?>
+                        <?php echo form_open('index.php/Welcome/perhitungan', array('enctype' => 'multipart/form-data','class' => 'form_advanced_validation', 'autocomplete' => 'off' ,'id'=>'form')); ?>
+                            <!-- <form id="form" > -->
                                 <div id="wizard_vertical">
                                     <h2>Question 1</h2>
                                     <section>
@@ -305,6 +312,47 @@
                 </div>
             </div>
             <!-- #END# Basic Example | Vertical Layout -->
+
+             <!-- Default Size -->
+             <div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="defaultModalLabel">RESULT CF</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="val1">SPORT</label>
+                                <div class="form-line">
+                                    <input type="text" id="val1" name="sport" class="form-control" readonly/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="val2">BEBEK</label>
+                                <div class="form-line">
+                                    <input type="text" id="val2" name="bebek" class="form-control" readonly/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="val3">MATIC</label>
+                                <div class="form-line">
+                                    <input type="text" id="val3" name="matic" class="form-control" readonly/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="val4">RESULT</label>
+                                <div class="form-line">
+                                    <textarea name="result" id="result" cols="50" rows="5" readonly></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" onclick="refresh()">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <!-- Jquery Core Js -->
         <script src="<?php echo base_url('asset/home/'); ?>plugins/jquery/jquery.min.js"></script>
@@ -327,5 +375,11 @@
         <script src="<?php echo base_url('asset/home/'); ?>js/pages/forms/form-wizard.js"></script>
         <!-- Demo Js -->
         <script src="<?php echo base_url('asset/home/'); ?>js/demo.js"></script>
+
+        <script>
+        function refresh() {
+            location.reload();
+        }
+        </script>
     </body>
 </html>

@@ -35,7 +35,7 @@
                 <div class="navbar-header">
                     <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                     <a href="javascript:void(0);" class="bars"></a>
-                    <a class="navbar-brand" href="<?php echo base_url('/'); ?>">SISTEM KELAYAKAN PENGAJUAN KREDIT</a>
+                    <a class="navbar-brand" href="<?php echo base_url('/'); ?>">AI for Life</a>
                 </div>
             </div>
         </nav>
@@ -57,7 +57,7 @@
                 <!-- Menu -->
                 <div class="menu">
                     <ul class="list">
-                        <li class="header">MENU UTAMA</li>
+                    <li class="header">MENU UTAMA</li>
                         <li>
                             <a href="<?php echo base_url('Home'); ?>">
                             <i class="material-icons">home</i>
@@ -71,7 +71,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url('fuzzy'); ?>">
+                            <a href="<?php echo base_url('Fuzzy'); ?>">
                             <i class="material-icons">explore</i>
                             <span>Fuzzy Logic</span>
                             </a>
@@ -82,7 +82,7 @@
                 <!-- Footer -->
                 <div class="legal">
                     <div class="copyright">
-                        &copy; <?php echo date('Y'); ?> <a href="javascript:void(0);">ARTIFICIAL INTELLEGENT</a>.
+                        &copy; <?php echo date('Y'); ?> <a href="javascript:void(0);">ARTIFICIAL INTELLIGENT</a>.
                     </div>
                 </div>
                 <!-- #Footer -->
@@ -90,64 +90,8 @@
             <!-- #END# Left Sidebar -->
         </section>
         <section class="content">
-            <!-- Basic Example | Vertical Layout -->
             <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>FUZZY LOGIC</h2>
-                        </div>
-                        <div class="body">
-                            <form class="form_advanced_validation" id="form" method="post">
-                                <label>BERAPA JUMLAH PENGHASILAN ANDA (Juta)</label>
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <input type="text" id="gaji" name="gaji" class="form-control" placeholder="Masukan Pemasukan Dalam Juta">
-                                    </div>
-                                </div>
-                                <label>BERAPA JUMLAH ASSET ANDA (Biji)</label>
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <input type="text" id="asset" name="asset" class="form-control" placeholder="Masukan Asset dalam Biji">
-                                    </div>
-                                </div>
-
-                                <br>
-                                <button type="submit" class="btn btn-primary m-t-15 waves-effect">Submit</button>
-                            <?php echo form_close(); ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# Basic Example | Vertical Layout -->
-
-              <!-- Default Size -->
-              <div class="modal fade" id="defaultModal" tabindex="-1">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="defaultModalLabel">RESULT FUZZY</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label for="val1">HASIL FUZIFIKASI</label>
-                                <div class="form-line">
-                                    <!-- <input type="text" id="val1" name="fuzifikasi" class="form-control" readonly/> -->
-                                    <textarea name="fuzifikasi" id="fuzifikasi" cols="70" rows="5"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="val2">HASIL DEFUZIFIKASI</label>
-                                <div class="form-line">
-                                    <input type="text" id="val2" name="defuzifikasi" class="form-control" readonly/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal" onclick="refresh()">CLOSE</button>
-                        </div>
-                    </div>
-                </div>
+                <h1>ARTIFICIAL INTELLIGENT</h1>
             </div>
         </section>
         <!-- Jquery Core Js -->
@@ -171,30 +115,5 @@
         <script src="<?php echo base_url('asset/home/'); ?>js/pages/forms/form-wizard.js"></script>
         <!-- Demo Js -->
         <script src="<?php echo base_url('asset/home/'); ?>js/demo.js"></script>
-
-        <script>
-            $(function(){
-                $('#form').on('submit', function(e){
-                    e.preventDefault();
-                    $.ajax({
-                        url: "<?php echo base_url('index.php/fuzzy/proses'); ?>", //this is the submit URL
-                        type: 'POST', //or POST
-                        data: $('#form').serialize(),
-                        success: function(data){
-                            var obj=JSON.parse(data);
-                            //alert("Data Loaded: " + data);
-
-                            $('[name="fuzifikasi"]').val(obj.fuzifikasi);
-                            $('[name="defuzifikasi"]').val(obj.defuzifikasi);
-                            $('#defaultModal').modal('show');
-                            $('.modal-title').text('RESULT FUZZY');
-                        }
-                    });
-                });
-            });
-            function refresh() {
-                location.reload();
-            }
-        </script>
     </body>
 </html>
